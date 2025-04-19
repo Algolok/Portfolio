@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- Add AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">ALGOLOK</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">ALOK RAWAT</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container" data-aos="fade-right" data-aos-duration="1000" data-aos-mirror="true">
+        <img src="./assets/me.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text" data-aos="fade-left" data-aos-duration="1000" data-aos-mirror="true">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Alok Rawat</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/ALOK _RAWAT(RESUME).pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https:/www.linkedin.com/in/alok-rawat-713775250/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https:/github.com/Algolok'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1" data-aos="fade-up" data-aos-mirror="true">Get To Know More</p>
+      <h1 class="title" data-aos="fade-up" data-aos-mirror="true">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container" data-aos="fade-right" data-aos-mirror="true">
+          <img
+            src="./assets/about me.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container" data-aos="fade-left" data-aos-mirror="true">
+          <div class="about-containers">
+            <div class="details-container" data-aos="zoom-in" data-aos-delay="200" data-aos-mirror="true">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Intern at SKYNOX tech pvt <br />Frontend Development</p>
+            </div>
+            <div class="details-container" data-aos="zoom-in" data-aos-delay="400" data-aos-mirror="true">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor in Technology <br> Computer science</p>
+            </div>
+          </div>
+          <div class="text-container" data-aos="fade-up" data-aos-delay="200" data-aos-mirror="true">
+            <p>
+              Hi, I'm Alok — a final-year B.Tech student driven by a passion for frontend development and building seamless, interactive web applications. My core strengths lie in JavaScript, React, and Python, which I use to craft clean, efficient, and dynamic user experiences. I thrive on learning new technologies, solving real-world problems, and constantly pushing my boundaries to grow as a frontend engineer. With a solid technical foundation and a creative mindset, I aim to contribute to impactful projects and innovative teams.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1" data-aos="fade-up" data-aos-mirror="true">Explore My</p>
+      <h1 class="title" data-aos="fade-up" data-aos-mirror="true">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container" data-aos="flip-left" data-aos-mirror="true">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article data-aos="fade-up" data-aos-delay="100" data-aos-mirror="true">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article data-aos="fade-up" data-aos-delay="200" data-aos-mirror="true">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwind CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article data-aos="fade-up" data-aos-delay="300" data-aos-mirror="true">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article data-aos="fade-up" data-aos-delay="400" data-aos-mirror="true">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article data-aos="fade-up" data-aos-delay="500" data-aos-mirror="true">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article data-aos="fade-up" data-aos-delay="600" data-aos-mirror="true">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>LLM application</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container" data-aos="flip-right" data-aos-delay="300" data-aos-mirror="true">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article data-aos="fade-up" data-aos-delay="100" data-aos-mirror="true">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article data-aos="fade-up" data-aos-delay="200" data-aos-mirror="true">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article data-aos="fade-up" data-aos-delay="300" data-aos-mirror="true">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article data-aos="fade-up" data-aos-delay="400" data-aos-mirror="true">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1" data-aos="fade-up" data-aos-mirror="true">Browse My Recent</p>
+      <h1 class="title" data-aos="fade-up" data-aos-mirror="true">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container" data-aos="fade-up" data-aos-mirror="true">
+            <div class="article-container">
+              <img
+                src="./assets/pro1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Chat Bot Using Local LLM model</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Algolok/Talk-with-Jivi.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container" data-aos="fade-up" data-aos-delay="200" data-aos-mirror="true">
+            <div class="article-container">
+              <img
+                src="./assets/pro2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Chiropractor-Healthcare</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Algolok/Chiropractor-Healthcare-Front-End-Layout.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://algolok.github.io/Chiropractor-Healthcare-Front-End-Layout/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container" data-aos="fade-up" data-aos-delay="400" data-aos-mirror="true">
+            <div class="article-container">
+              <img
+                src="./assets/pro3.jpeg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Shopsy responsive website design
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Algolok/shopsy-responsive-website-design'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Algolok/shopsy-responsive-website-design'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1" data-aos="fade-up" data-aos-mirror="true">Get in Touch</p>
+      <h1 class="title" data-aos="fade-up" data-aos-mirror="true">Contact Me</h1>
+      <div class="contact-info-upper-container" data-aos="zoom-in" data-aos-mirror="true">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:A4alok4122@gmail.com">A4alok4122@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Alok Rawat. All Rights Reserved.</p>
+    </footer>
+    
+    <!-- Add AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: false,  // Changed to false so animations happen every time
+        mirror: true, // Allows animations to trigger when scrolling up too
+        offset: 100
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
